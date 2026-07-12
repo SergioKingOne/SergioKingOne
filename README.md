@@ -21,17 +21,3 @@ The habit that ties it together: when the right tool does not exist, I build it 
   <source media="(prefers-color-scheme: dark)" srcset="assets/primitives-dark.svg">
   <img src="assets/primitives-light.svg" alt="Figure 04, from primitives. A running ledger of tools built where none fit: in-house IP intelligence instead of a vendor score, a geocoding engine over open data instead of a paid API, Apple App Attest verification in Rust instead of an SDK, encrypted blind indexes instead of plaintext search. Stamp reads: built, not bought.">
 </picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/now-dark.svg">
-  <img src="assets/now-light.svg" alt="Figure 05, lab notebook. Recent write-ups: verifying Apple App Attest in Rust from raw bytes; searchable encryption, querying PII you cannot decrypt. Plus recently touched repositories, refreshed weekly by CI. This figure regenerates itself.">
-</picture>
-
-### Field notes
-
-Long-form write-ups of things I built and what they taught me, linked from my [LinkedIn featured section](https://www.linkedin.com/in/sergio-robayo-500584216/):
-
-- **Verifying Apple App Attest in Rust, from raw bytes.** All nine steps, no attestation library, under 300 lines, tested against a real captured device attestation.
-- **Searchable encryption: querying PII you cannot decrypt.** AES-256-SIV plus a keyed blind index, with every leak named and bounded.
-
-<sub>Colophon: this page is a build artifact. Five figures, two color surfaces (switch your theme), one generator: <a href="generate/">generate/</a>. Hand-set type as code, embedded fonts, no stat widgets, no screenshots. Figure 05 re-renders itself weekly by CI, the same way anything worth running gets run: tokens, codegen, pipeline.</sub>

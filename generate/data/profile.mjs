@@ -63,8 +63,3 @@ export const PRIMITIVES = {
   stamp: ['BUILT,', 'NOT BOUGHT'],
   caption: 'A RUNNING LEDGER · TOOLS BUILT WHERE NONE FIT',
 };
-
-export const WRITEUPS = [
-  { title: 'Verifying Apple App Attest in Rust, from raw bytes', sub: 'nine steps, no attestation library, under 300 lines.' },
-  { title: 'Searchable encryption: querying PII you cannot decrypt', sub: 'AES-256-SIV plus a keyed blind index, leaks you can name.' },
-];

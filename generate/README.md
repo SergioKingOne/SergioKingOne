@@ -17,19 +17,14 @@ This profile page is a build artifact. Everything visual on the README is an SVG
   latin and inlined as base64 data URIs, because GitHub serves README images
   through a proxy that blocks external resources.
 - **`figures/*.mjs`** each render one figure from data in `data/profile.mjs`.
-  Animations (the blinking cursor, the session pulse traveling the KYC rail)
-  are CSS keyframes inside the SVG, wrapped in
-  `prefers-reduced-motion: no-preference`.
+  The hero's blinking cursor and header rule-draw are CSS keyframes inside the
+  SVG, wrapped in `prefers-reduced-motion: no-preference`.
 - **`build.mjs`** writes every figure in both surfaces to `../assets/`.
-- **`update-now.mjs`** refreshes `data/now.json` (ISO-week stamp plus recently
-  pushed repos from the GitHub API), and a weekly GitHub Action re-renders
-  figure 05 from it. The page maintains itself.
 
 ## Reproduce
 
 ```sh
-node generate/update-now.mjs   # refresh dynamic data (optional)
-node generate/build.mjs        # render all 10 SVGs
+node generate/build.mjs   # render all 8 SVGs
 ```
 
 No dependencies. Node 20+.

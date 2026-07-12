@@ -10,9 +10,8 @@ import { hero } from './figures/hero.mjs';
 import { range } from './figures/range.mjs';
 import { metrics } from './figures/metrics.mjs';
 import { primitives } from './figures/primitives.mjs';
-import { now } from './figures/now.mjs';
 
-const FIGURES = { hero, range, metrics, primitives, now };
+const FIGURES = { hero, range, metrics, primitives };
 
 const ASSETS = join(dirname(fileURLToPath(import.meta.url)), '..', 'assets');
 mkdirSync(ASSETS, { recursive: true });
