@@ -3,56 +3,65 @@
 export const SERIES = 'GITHUB.COM/SERGIOKINGONE';
 
 export const HERO = {
-  kicker: 'RUST · AWS · FRAUD & IDENTITY SYSTEMS',
+  kicker: 'RUST · AWS · DISTRIBUTED SYSTEMS',
   name: 'SERGIO ROBAYO',
   sub: [
-    { t: 'Builds production backends from a blank repo, then ' },
-    { t: 'replaces the vendors', accent: true },
-    { t: ' one by one.' },
+    { t: 'Learns fast, ' },
+    { t: 'ships faster', accent: true },
+    { t: ', and chases hard problems wherever they live.' },
   ],
-  caption: 'FOUNDING & LEAD BACKEND ENGINEER · BOGOTA, CO (REMOTE)',
+  caption: 'BACKEND ENGINEER · BOGOTA, COLOMBIA · REMOTE',
 };
 
-export const PIPELINE = {
-  stages: ['PHONE', 'OTP', 'LOCATION', 'DETAILS', 'SSN', 'DOC', 'WATCHLIST', 'LEXIS', 'LIVENESS', 'FACEMATCH', 'FINAL'],
-  autoPct: '87%',
-  reviewPct: '13%',
-  note: 'one session, eleven gates, no human in the loop for 87 of every 100.',
-  caption: 'KYC IDENTITY PIPELINE · US / DE / NG / MX / BR',
+export const RANGE = {
+  rows: [
+    { domain: 'FRAUD & IDENTITY', note: 'KYC pipelines, biometric verification, device attestation, graph risk engines.' },
+    { domain: 'GEO & IP INTELLIGENCE', note: 'planet-scale geocoding, proxy physics, TLS fingerprints, fraud-rate mapping.' },
+    { domain: 'PRIVACY ENGINEERING', note: 'searchable encryption, per-tenant keys, deletion that actually cascades.' },
+    { domain: 'AI SYSTEMS', note: 'RAG pipelines, actor architectures, vision inference cut from 50s to 3.5s.' },
+    { domain: 'REAL-TIME SYSTEMS', note: 'WebSocket broadcast, pub/sub coordination, streaming video analysis.' },
+  ],
+  closing: 'every row here was unfamiliar once; learning it is the job.',
+  caption: 'DOMAINS SHIPPED TO PRODUCTION · 2023 TO PRESENT',
 };
 
 export const METRICS = {
   items: [
     { n: '810K', unit: '', l1: 'SESSIONS', l2: 'DECISIONED' },
     { n: '99.96', unit: '%', l1: 'STAGE', l2: 'SUCCESS' },
-    { n: '87', unit: '%', l1: 'STRAIGHT-', l2: 'THROUGH', accent: true },
-    { n: '475K', unit: '', l1: 'LINES', l2: 'OF RUST' },
-    { n: '10', unit: '', l1: 'CLIENTS IN', l2: '5 COUNTRIES' },
+    { n: '475K', unit: '', l1: 'LINES', l2: 'OF RUST', accent: true },
+    { n: '14', unit: '×', l1: 'INFERENCE', l2: 'SPEEDUP' },
+    { n: '2', unit: '', l1: 'BACKENDS', l2: 'FROM ZERO' },
   ],
   note: 'measured in production, not on a slide.',
-  caption: 'PLATFORM TELEMETRY · CONTINUOUS BILLING SINCE SEP 2025',
+  caption: 'CAREER READOUT · 2023 TO PRESENT',
 };
 
-export const LEDGER = {
+export const PRIMITIVES = {
   rows: [
     {
-      vendor: 'VERISOUL',
-      cap: 'IP INTELLIGENCE',
-      detail: 'a MaxMind MMDB writer from scratch, physics-bound RTT proxy detection, JA4 TLS fingerprints, per-ASN fraud rates.',
+      typical: 'A VENDOR SCORE',
+      built: 'IP INTELLIGENCE',
+      note: 'MMDB tooling written from scratch, RTT proxy physics, JA4 TLS fingerprints.',
     },
     {
-      vendor: 'GOOGLE MAPS',
-      cap: 'GEOCODING',
-      detail: 'reverse geocoding and autocomplete over 446M Overture addresses, on Aurora PostGIS and OpenSearch.',
+      typical: 'A PAID API',
+      built: 'GEOCODING ENGINE',
+      note: 'reverse geocoding and autocomplete over 446M open Overture addresses.',
     },
     {
-      vendor: 'REGULA SAAS',
-      cap: 'DOC AUTHENTICITY',
-      detail: 'self-hosted on ECS Fargate, zero-trust server-side re-extraction across 8 country pipelines.',
+      typical: 'AN SDK',
+      built: 'APP ATTEST, IN RUST',
+      note: 'all nine verification steps from raw CBOR, under 300 lines.',
+    },
+    {
+      typical: 'PLAINTEXT SEARCH',
+      built: 'BLIND INDEXES',
+      note: 'AES-256-SIV plus keyed trigram hashing: encrypted PII you can still query.',
     },
   ],
-  stamp: ['BROUGHT', 'IN HOUSE'],
-  caption: 'VENDOR REPLACEMENT LEDGER · 2025 TO PRESENT',
+  stamp: ['BUILT,', 'NOT BOUGHT'],
+  caption: 'A RUNNING LEDGER · TOOLS BUILT WHERE NONE FIT',
 };
 
 export const WRITEUPS = [
@@ -61,7 +70,7 @@ export const WRITEUPS = [
 ];
 
 export const FOCUS = [
-  'GEOLOCATION FRAUD: 2ND PRODUCT LINE',
+  'GEOLOCATION FRAUD DETECTION',
   'AWS SOLUTIONS ARCHITECT, ASSOCIATE',
   'B.ENG SYSTEMS ENGINEERING, 2026',
 ];

@@ -39,7 +39,7 @@ export function hero(s) {
   return figure(s, {
     id: 'hero',
     height: H,
-    ariaLabel: 'Sergio Robayo. Rust and AWS backend engineer for fraud and identity systems. Builds production backends from a blank repo, then replaces the vendors one by one.',
+    ariaLabel: 'Sergio Robayo. Rust, AWS, distributed systems. Backend engineer. Learns fast, ships faster, and chases hard problems wherever they live.',
     css,
     body,
   });

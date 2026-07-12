@@ -23,7 +23,7 @@ export function metrics(s) {
   }).join('\n');
 
   const body = [
-    figHeader(s, { num: '03', title: 'PRODUCTION READOUT', series: SERIES }),
+    figHeader(s, { num: '03', title: 'THE READOUT', series: SERIES }),
     panels,
     annot(METRICS.note, { x: MX, y: 296, fs: 24, fill: s.ink }),
     figFooter(s, H, { caption: METRICS.caption }),
@@ -32,7 +32,7 @@ export function metrics(s) {
   return figure(s, {
     id: 'metrics',
     height: H,
-    ariaLabel: 'Production readout: about 810 thousand sessions decisioned, 99.96 percent stage success, 87 percent straight-through approval, about 475 thousand lines of Rust, 10 clients in 5 countries.',
+    ariaLabel: 'Career readout, 2023 to present: about 810 thousand sessions decisioned, 99.96 percent stage success, about 475 thousand lines of Rust, 14 times inference speedup, 2 production backends built from zero.',
     body,
   });
 }

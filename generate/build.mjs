@@ -7,12 +7,12 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { SURFACES } from './lib/tokens.mjs';
 import { hero } from './figures/hero.mjs';
-import { pipeline } from './figures/pipeline.mjs';
+import { range } from './figures/range.mjs';
 import { metrics } from './figures/metrics.mjs';
-import { ledger } from './figures/ledger.mjs';
+import { primitives } from './figures/primitives.mjs';
 import { now } from './figures/now.mjs';
 
-const FIGURES = { hero, pipeline, metrics, ledger, now };
+const FIGURES = { hero, range, metrics, primitives, now };
 
 const ASSETS = join(dirname(fileURLToPath(import.meta.url)), '..', 'assets');
 mkdirSync(ASSETS, { recursive: true });
