@@ -68,9 +68,3 @@ export const WRITEUPS = [
   { title: 'Verifying Apple App Attest in Rust, from raw bytes', sub: 'nine steps, no attestation library, under 300 lines.' },
   { title: 'Searchable encryption: querying PII you cannot decrypt', sub: 'AES-256-SIV plus a keyed blind index, leaks you can name.' },
 ];
-
-export const FOCUS = [
-  'GEOLOCATION FRAUD DETECTION',
-  'AWS SOLUTIONS ARCHITECT, ASSOCIATE',
-  'B.ENG SYSTEMS ENGINEERING, 2026',
-];

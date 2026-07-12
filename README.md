@@ -24,7 +24,7 @@ The habit that ties it together: when the right tool does not exist, I build it 
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/now-dark.svg">
-  <img src="assets/now-light.svg" alt="Figure 05, lab notebook. Recent write-ups: verifying Apple App Attest in Rust from raw bytes; searchable encryption, querying PII you cannot decrypt. Current focus: geolocation fraud detection, AWS Solutions Architect Associate, systems engineering degree in 2026. This figure regenerates itself weekly.">
+  <img src="assets/now-light.svg" alt="Figure 05, lab notebook. Recent write-ups: verifying Apple App Attest in Rust from raw bytes; searchable encryption, querying PII you cannot decrypt. Plus recently touched repositories, refreshed weekly by CI. This figure regenerates itself.">
 </picture>
 
 ### Field notes

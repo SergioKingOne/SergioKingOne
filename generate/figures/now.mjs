@@ -2,9 +2,9 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { figure, figHeader, figFooter, label, annot, esc, text, MX } from '../lib/svg.mjs';
-import { SERIES, WRITEUPS, FOCUS } from '../data/profile.mjs';
+import { SERIES, WRITEUPS } from '../data/profile.mjs';
 
-const H = 400;
+const H = 380;
 const NOW_PATH = join(dirname(fileURLToPath(import.meta.url)), '..', 'data', 'now.json');
 
 export function now(s) {
@@ -18,33 +18,29 @@ export function now(s) {
     ].join('\n');
   }).join('\n');
 
-  const focus = FOCUS.map((f, i) => {
+  const activity = dyn.activity.slice(0, 3).map((a, i) => {
     const y = 182 + i * 40;
     return [
-      `<rect x="762" y="${y - 11}" width="11" height="11" fill="none" stroke="${s.ink}" stroke-width="1.8"/>`,
-      label(f, { x: 792, y, fs: 16, ls: 0.08, fill: s.ink }),
+      text(esc(a.name), { x: 792, y, fs: 16, w: 600, ls: 0.02, fill: s.ink }),
+      text(esc(`(${a.lang})`), { x: 792 + (a.name.length * 16 * 0.62) + 14, y, fs: 14, w: 600, fill: s.muted }),
+      `<line x1="762" y1="${y - 5}" x2="774" y2="${y - 5}" stroke="${s.hairline}" stroke-width="2"/>`,
     ].join('\n');
   }).join('\n');
-
-  const activity = dyn.activity
-    .map((a) => `${a.name} (${a.lang})`)
-    .join('  ·  ');
 
   const body = [
     figHeader(s, { num: '05', title: 'LAB NOTEBOOK', series: SERIES }),
     label('RECENT WRITE-UPS', { x: MX, y: 140, fs: 15, fill: s.accentDeep }),
     writeups,
-    `<line x1="722" y1="118" x2="722" y2="300" stroke="${s.hairline}" stroke-width="1"/>`,
-    label('CURRENT FOCUS', { x: 762, y: 140, fs: 15, fill: s.accentDeep }),
-    focus,
-    text(esc(`RECENTLY TOUCHED: ${activity}`), { x: MX, y: 316, fs: 14, w: 600, ls: 0.04, fill: s.muted }),
+    `<line x1="722" y1="118" x2="722" y2="286" stroke="${s.hairline}" stroke-width="1"/>`,
+    label('RECENTLY TOUCHED', { x: 762, y: 140, fs: 15, fill: s.accentDeep }),
+    activity,
     figFooter(s, H, { caption: `OBSERVED ${dyn.stamp} · THIS FIGURE REGENERATES ITSELF` }),
   ].join('\n');
 
   return figure(s, {
     id: 'now',
     height: H,
-    ariaLabel: `Lab notebook. Recent write-ups: ${WRITEUPS.map((wu) => wu.title).join('; ')}. Current focus: geolocation fraud product line, AWS Solutions Architect Associate, systems engineering degree 2026. Observed ${dyn.stamp}.`,
+    ariaLabel: `Lab notebook. Recent write-ups: ${WRITEUPS.map((wu) => wu.title).join('; ')}. Recently touched repositories, refreshed weekly by CI. Observed ${dyn.stamp}.`,
     body,
   });
 }
