@@ -45,6 +45,6 @@ Long-form write-ups of things I built and what they taught me, linked from my [L
 
 ### Contact
 
-[LinkedIn](https://www.linkedin.com/in/sergio-robayo-500584216/) · [sergiorobayorr@gmail.com](mailto:sergiorobayorr@gmail.com) · Bogota, Colombia (remote, worldwide)
+[Portfolio](https://sergiokingone.github.io/sergiorobayo.github.io/) · [LinkedIn](https://www.linkedin.com/in/sergio-robayo-500584216/) · [sergiorobayorr@gmail.com](mailto:sergiorobayorr@gmail.com) · Bogota, Colombia (remote, worldwide)
 
 <sub>Colophon: this page is a build artifact. Five figures, two color surfaces (switch your theme), one generator: <a href="generate/">generate/</a>. Hand-set type as code, embedded fonts, no stat widgets, no screenshots. Figure 05 re-renders itself weekly by CI, the same way anything worth running gets run: tokens, codegen, pipeline.</sub>

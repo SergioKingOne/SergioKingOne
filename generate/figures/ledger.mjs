@@ -23,7 +23,7 @@ export function ledger(s) {
     const vw = monoW(r.vendor, 22);
     const detail = wrap(r.detail, 20, 620);
     return [
-      i > 0 ? `<line x1="${MX}" y1="${y0 - 60}" x2="1040" y2="${y0 - 60}" stroke="${s.hairline}" stroke-width="1"/>` : '',
+      i > 0 ? `<line x1="${MX}" y1="${y0 - 34}" x2="1040" y2="${y0 - 34}" stroke="${s.hairline}" stroke-width="1"/>` : '',
       text(esc(r.vendor), { x: MX, y: y0, fs: 22, w: 700, fill: s.muted }),
       `<line x1="${MX - 4}" y1="${y0 - 8}" x2="${MX + vw + 4}" y2="${y0 - 8}" stroke="${s.ink}" stroke-width="2.5"/>`,
       arrow(s, 330, y0 - 7, 52, s.muted, 1.5),

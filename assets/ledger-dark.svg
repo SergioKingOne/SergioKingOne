@@ -26,7 +26,7 @@ text{white-space:pre}
 <text x="412" y="158" fill="#E9E4D6" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="22" font-weight="700">IP INTELLIGENCE</text>
 <text x="412" y="190" fill="#E9E4D6" font-family="'Fraunces', Georgia, 'Times New Roman', serif" font-size="20" font-style="italic">a MaxMind MMDB writer from scratch, physics-bound RTT proxy</text>
 <text x="412" y="217" fill="#E9E4D6" font-family="'Fraunces', Georgia, 'Times New Roman', serif" font-size="20" font-style="italic">detection, JA4 TLS fingerprints, per-ASN fraud rates.</text>
-<line x1="64" y1="204" x2="1040" y2="204" stroke="#454138" stroke-width="1"/>
+<line x1="64" y1="230" x2="1040" y2="230" stroke="#454138" stroke-width="1"/>
 <text x="64" y="264" fill="#8D8778" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="22" font-weight="700">GOOGLE MAPS</text>
 <line x1="60" y1="256" x2="213.2" y2="256" stroke="#E9E4D6" stroke-width="2.5"/>
 <g stroke="#8D8778" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -35,7 +35,7 @@ text{white-space:pre}
 <text x="412" y="264" fill="#E9E4D6" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="22" font-weight="700">GEOCODING</text>
 <text x="412" y="296" fill="#E9E4D6" font-family="'Fraunces', Georgia, 'Times New Roman', serif" font-size="20" font-style="italic">reverse geocoding and autocomplete over 446M Overture addresses,</text>
 <text x="412" y="323" fill="#E9E4D6" font-family="'Fraunces', Georgia, 'Times New Roman', serif" font-size="20" font-style="italic">on Aurora PostGIS and OpenSearch.</text>
-<line x1="64" y1="310" x2="1040" y2="310" stroke="#454138" stroke-width="1"/>
+<line x1="64" y1="336" x2="1040" y2="336" stroke="#454138" stroke-width="1"/>
 <text x="64" y="370" fill="#8D8778" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="22" font-weight="700">REGULA SAAS</text>
 <line x1="60" y1="362" x2="213.2" y2="362" stroke="#E9E4D6" stroke-width="2.5"/>
 <g stroke="#8D8778" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
