@@ -22,15 +22,6 @@ The habit that ties it together: when the right tool does not exist, I build it 
   <img src="assets/primitives-light.svg" alt="Figure 04, from primitives. A running ledger of tools built where none fit: in-house IP intelligence instead of a vendor score, a geocoding engine over open data instead of a paid API, Apple App Attest verification in Rust instead of an SDK, encrypted blind indexes instead of plaintext search. Stamp reads: built, not bought.">
 </picture>
 
-### Selected instruments
-
-| repo | what it is |
-|---|---|
-| [`mmdb-writer`](https://github.com/SergioKingOne/mmdb-writer) | Write MaxMind DB (`.mmdb`) files in pure, safe Rust. A file format the ecosystem had readers for, but no writer. Built for production, released for everyone. |
-| [`kafka`](https://github.com/SergioKingOne/kafka) | My own Kafka implementation. The best way to trust a system is to have built one. |
-| [`http-server`](https://github.com/SergioKingOne/http-server) | An HTTP server in Rust, from the socket up. |
-| [`multithreaded-web-server`](https://github.com/SergioKingOne/multithreaded-web-server) | Thread pools and graceful shutdown, by hand. |
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/now-dark.svg">
   <img src="assets/now-light.svg" alt="Figure 05, lab notebook. Recent write-ups: verifying Apple App Attest in Rust from raw bytes; searchable encryption, querying PII you cannot decrypt. Current focus: geolocation fraud detection, AWS Solutions Architect Associate, systems engineering degree in 2026. This figure regenerates itself weekly.">
